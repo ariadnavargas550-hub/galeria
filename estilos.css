@@ -1,0 +1,112 @@
+/* CONFIGURACION GENERAL*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family:Arial, sans-serif ;
+    background-color: black;
+}
+
+/*ENCABEZADO*/
+header{
+    background-color: plum;
+    padding:50px;
+    text-align:center;
+    border-bottom:20px solid black;
+
+}
+
+
+header h1{
+    color:black;
+    font-size: 38px;
+    margin: 0px ;
+
+
+}
+
+header p{
+    color:grey;
+    font-size:20px;
+
+}
+nav{
+  margin-top: 10px;
+  display: flex; /* lo hace horizontal */
+  flex-wrap: nowrap; /* no deja que baje */
+  overflow-x: auto; /* activa el scroll */
+  gap: 5px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+  flex: 0 0 auto; /* no se hace chiquito */
+  white-space: nowrap; /* no se parte el texto */
+}
+
+/* para que no se vea fea la barra */
+nav::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+
+.patrones {
+    padding: 30px;
+    margin: 25px;
+    background-color: plum;
+    border-radius:20px;
+}
+
+ 
+
+.galeria{
+    columns: 4;
+    column-gap:15px;
+}
+
+.tarjeta{
+    background-color: black;
+    margin-bottom:15px;
+    border-radius:15px;
+    overflow:hidden;/* sirve para ocultar cualquier contenido que  sobresalga
+    de los limites de un elemento */
+
+    break-inside:avoid;/* sirve para evitar que un elemnto se divida entre 2 columnas o paginas*/
+    transition:transform 0.3s; /*sirve para suavizar clics al presionar 
+    un boton o hipervinculo*/
+}
+img{
+    width: 100%;
+    height:auto;
+    display:block;
+}
+
+footer{
+    background-color: plum;
+    color:black;
+    text-align: center;
+    padding: 25px;
+    margin:30px;
+
+}
+
+footer p{
+    margin: 5px;
+}
